@@ -24,6 +24,8 @@
 ---
 
 ## Les dernières news
+
+<div id="fiba-news">Chargement de la dernière actualité...</div>
 <script>
 async function chargerDerniereActuFIBA() {
   try {
