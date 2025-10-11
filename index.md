@@ -46,14 +46,13 @@ Pas encore de news à afficher pour l'instant. 🌟
 
 <ul>
   <li><a href="https://github.com/CalvezGabriel" target="_blank" style="color:#004aad;">GitHub</a></li>
-  <li><a href="mailto:gabyc1729@gmail.com" style="color:#004aad;">Email</a></li>
 </ul>
 
 <hr style="border-top:2px solid #004aad;">
 
 <p style="text-align:center;">
 Pages supplémentaires : 
-<a href="page1.md" style="color:#004aad;">Page 1</a> | 
-<a href="page2.md" style="color:#004aad;">Page 2</a> | 
-<a href="page3.md" style="color:#004aad;">Page 3</a>
+<a href="page1.md" style="color:#004aad;">Article 1</a> | 
+<a href="page2.md" style="color:#004aad;">Article 2</a> | 
+<a href="page3.md" style="color:#004aad;">Article 3</a>
 </p>
