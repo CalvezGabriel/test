@@ -30,58 +30,29 @@ Bienvenue sur mon site web dédié au <strong>basketball</strong>! 🏀
 
 <hr style="border-top:2px solid #004aad;">
 
-## <span style="color:#ff4500;">Les dernières news</span>
+## <span style="color:#ff4500;">L'image du jour</span>
 
-<div id="fiba-news" style="
-  background-color:#333; 
-  color:#fff; 
-  padding:1em; 
-  border-radius:10px; 
-  max-width:700px;
-  margin-top:1em;
-">
-  Chargement en cours...
+<div style="text-align:center; margin-bottom:2em;">
+  <img id="basket-image" src="" alt="Basketball" style="width:400px; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.3);">
 </div>
 
 <script>
-async function chargerDerniereActuFIBA() {
-  try {
-    // Utilisation du proxy pour contourner le CORS
-    const response = await fetch("https://api.allorigins.win/raw?url=https://www.fiba.basketball/news/rss");
-    const text = await response.text();
-    const parser = new DOMParser();
-    const xml = parser.parseFromString(text, "application/xml");
+  // Liste d'images de basketball
+  const images = [
+    "https://upload.wikimedia.org/wikipedia/commons/7/7a/Basketball.png",
+    "https://upload.wikimedia.org/wikipedia/commons/2/2a/Basketball_player.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/0/0e/NBA_logo.svg",
+    "https://upload.wikimedia.org/wikipedia/commons/1/12/Basketball_court.jpg"
+  ];
 
-    // Sélection du premier article
-    const item = xml.querySelector("item");
-    const titre = item.querySelector("title").textContent;
-    const lien = item.querySelector("link").textContent;
-    const description = item.querySelector("description").textContent;
-    const date = new Date(item.querySelector("pubDate").textContent);
+  // Choisir une image aléatoire
+  const randomIndex = Math.floor(Math.random() * images.length);
+  const selectedImage = images[randomIndex];
 
-    // Création du bloc HTML
-    document.getElementById("fiba-news").innerHTML = `
-      <h3 style="color:#ff9800; margin-top:0;">${titre}</h3>
-      <p style="font-size:0.95em; color:#ddd;">${description.substring(0, 200)}...</p>
-      <p style="font-size:0.8em; color:#bbb;">🗓️ ${date.toLocaleDateString("fr-FR")}</p>
-      <a href="${lien}" target="_blank" style="
-        display:inline-block;
-        background-color:#004aad;
-        color:white;
-        padding:0.5em 1em;
-        border-radius:6px;
-        text-decoration:none;
-        font-weight:bold;
-      ">Lire l'article complet</a>
-    `;
-  } catch (e) {
-    document.getElementById("fiba-news").innerHTML = "<p style='color:red;'>⚠️ Impossible de charger la dernière actualité.</p>";
-  }
-}
-
-// Lancement de la fonction
-chargerDerniereActuFIBA();
+  // Appliquer l'image au bloc HTML
+  document.getElementById("basket-image").src = selectedImage;
 </script>
+
 </p>
 
 <hr style="border-top:2px solid #004aad;">
