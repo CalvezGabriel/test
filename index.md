@@ -42,9 +42,12 @@ Bienvenue sur mon site web dédié au <strong>basketball</strong>! 🏀
 <script>
   // Tableau d'images (URLs brutes GitHub)
   const images = [
-    "https://raw.githubusercontent.com/tonPseudo/monSite/main/images/image1.jpg",
-    "https://raw.githubusercontent.com/tonPseudo/monSite/main/images/image2.jpg",
-    "https://raw.githubusercontent.com/tonPseudo/monSite/main/images/image3.jpg"
+    "https://raw.githubusercontent.com/CalvezGabriel/test/main/0_pPqMk344oOURRBNU.jpg.",
+    "https://raw.githubusercontent.com/CalvezGabriel/test/main/0_wKUU5jT0U6Zhj_6b.jpg",
+    "https://raw.githubusercontent.com/CalvezGabriel/test/main/r210878_600x600_1-1.jpg",
+    "https://raw.githubusercontent.com/CalvezGabriel/test/main/r210882_1761x2334cc.jpg",
+    "https://raw.githubusercontent.com/CalvezGabriel/test/main/r210890_2916x2568cc.jpg",
+    "https://raw.githubusercontent.com/CalvezGabriel/test/main/x8tzh0t55w6e1.jpeg"
   ];
 
   let currentIndex = 0; 
