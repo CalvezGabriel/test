@@ -1,21 +1,20 @@
 # BASKETBL🏀G
 
-# 🌍 Mon site minimal en Markdown
-Bienvenue sur mon site web dédié au basketball!  
+# Bienvenue sur mon site web dédié au basketball!  
 
 ---
 
 ## 🧑‍💻L'actu Internationale
 
-[Site BasketEurope :](https://www.basketeurope.com)
-[Site BeBasket :](https://www.bebasket.fr)
-[Site de la FIBA :](https://www.fiba.basketball/fr)
+1. [Site BasketEurope :](https://www.basketeurope.com)
+2. [Site BeBasket :](https://www.bebasket.fr)
+3. [Site de la FIBA :](https://www.fiba.basketball/fr)
 
 ---
 
-## Les plus belles actions NBA de la nuit du 09/10/25 
+## Les plus belles actions NBA de la saison 2024-25 
 <iframe width="560" height="315"
-  src="https://www.youtube.com/watch?v=RjWf3zm47B8"
+  src="https://www.youtube.com/watch?v=j2kvgwLapKk"
   title="YouTube video player"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
