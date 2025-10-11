@@ -32,8 +32,56 @@ Bienvenue sur mon site web dédié au <strong>basketball</strong>! 🏀
 
 ## <span style="color:#ff4500;">Les dernières news</span>
 
-<p style="background-color:#f5f5f5; padding:1em; border-radius:10px;">
-Pas encore de news à afficher pour l'instant. 🌟
+<div id="fiba-news" style="
+  background-color:#333; 
+  color:#fff; 
+  padding:1em; 
+  border-radius:10px; 
+  max-width:700px;
+  margin-top:1em;
+">
+  Chargement en cours...
+</div>
+
+<script>
+async function chargerDerniereActuFIBA() {
+  try {
+    // Utilisation du proxy pour contourner le CORS
+    const response = await fetch("https://api.allorigins.win/raw?url=https://www.fiba.basketball/news/rss");
+    const text = await response.text();
+    const parser = new DOMParser();
+    const xml = parser.parseFromString(text, "application/xml");
+
+    // Sélection du premier article
+    const item = xml.querySelector("item");
+    const titre = item.querySelector("title").textContent;
+    const lien = item.querySelector("link").textContent;
+    const description = item.querySelector("description").textContent;
+    const date = new Date(item.querySelector("pubDate").textContent);
+
+    // Création du bloc HTML
+    document.getElementById("fiba-news").innerHTML = `
+      <h3 style="color:#ff9800; margin-top:0;">${titre}</h3>
+      <p style="font-size:0.95em; color:#ddd;">${description.substring(0, 200)}...</p>
+      <p style="font-size:0.8em; color:#bbb;">🗓️ ${date.toLocaleDateString("fr-FR")}</p>
+      <a href="${lien}" target="_blank" style="
+        display:inline-block;
+        background-color:#004aad;
+        color:white;
+        padding:0.5em 1em;
+        border-radius:6px;
+        text-decoration:none;
+        font-weight:bold;
+      ">Lire l'article complet</a>
+    `;
+  } catch (e) {
+    document.getElementById("fiba-news").innerHTML = "<p style='color:red;'>⚠️ Impossible de charger la dernière actualité.</p>";
+  }
+}
+
+// Lancement de la fonction
+chargerDerniereActuFIBA();
+</script>
 </p>
 
 <hr style="border-top:2px solid #004aad;">
