@@ -1,4 +1,5 @@
 <body style="background-color:#1c1c1c; color:#f5f5f5; font-family: Arial, sans-serif; padding:2em;">
+  
 # <span style="color:#004aad;">BASKETBL🏀G</span>
 
 <p style="font-size:1.2em; text-align:center;">
@@ -44,9 +45,8 @@ Pas encore de news à afficher pour l'instant. 🌟
 <p>Tu peux me retrouver ici :</p>
 
 <ul>
-  <li><a href="https://github.com/monprofil" target="_blank" style="color:#004aad;">GitHub</a></li>
-  <li><a href="https://linkedin.com/in/monprofil" target="_blank" style="color:#004aad;">LinkedIn</a></li>
-  <li><a href="mailto:contact@monsite.com" style="color:#004aad;">Email</a></li>
+  <li><a href="https://github.com/CalvezGabriel" target="_blank" style="color:#004aad;">GitHub</a></li>
+  <li><a href="mailto:gabyc1729@gmail.com" style="color:#004aad;">Email</a></li>
 </ul>
 
 <hr style="border-top:2px solid #004aad;">
