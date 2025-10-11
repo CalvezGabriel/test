@@ -1,4 +1,5 @@
 # Score en directs
+
 <div id="live-scores" style="font-family: Arial, sans-serif; font-size: 1.2em; background-color: #1a1a1a; color: white; padding: 1em; border-radius: 8px;">
   Chargement des scores...
 </div>
