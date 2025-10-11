@@ -4,7 +4,7 @@
 
 ---
 
-## 🧑‍💻L'actu Internationale
+## L'actu Internationale
 
 1. [Site BasketEurope :](https://www.basketeurope.com)
 2. [Site BeBasket :](https://www.bebasket.fr)
@@ -13,7 +13,6 @@
 ---
 
 ## Les plus belles actions NBA de la saison 2024-25 
-<div style="text-align: center;">
 <iframe width="560" height="315"
   src="https://www.youtube.com/embed/j2kvgwLapKk"
   title="YouTube video player"
@@ -21,13 +20,29 @@
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
   allowfullscreen>
 </iframe>
+
 ---
 
-## 📚 Mes articles récents
-
-1. [Créer un site avec Markdown](#)
-2. [Introduction au HTML et CSS](#)
-3. [Découvrir JavaScript](#)
+## Les dernières news
+<script>
+async function chargerDerniereActuFIBA() {
+  try {
+    const response = await fetch("https://www.fiba.basketball/news/rss");
+    const text = await response.text();
+    const parser = new DOMParser();
+    const xml = parser.parseFromString(text, "application/xml");
+    const item = xml.querySelector("item");
+    const titre = item.querySelector("title").textContent;
+    const lien = item.querySelector("link").textContent;
+    document.getElementById("fiba-news").innerHTML =
+      `<a href="${lien}" target="_blank">${titre}</a>`;
+  } catch (e) {
+    document.getElementById("fiba-news").innerText =
+      "Impossible de charger la dernière actualité 😞";
+  }
+}
+chargerDerniereActuFIBA();
+</script>
 
 ---
 
