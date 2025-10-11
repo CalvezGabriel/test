@@ -52,7 +52,6 @@ Bienvenue sur mon site web dédié au <strong>basketball</strong>! 🏀
   // Appliquer l'image au bloc HTML
   document.getElementById("basket-image").src = selectedImage;
 </script>
-
 </p>
 
 <hr style="border-top:2px solid #004aad;">
