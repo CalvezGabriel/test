@@ -32,6 +32,13 @@ Bienvenue sur mon site web dédié au <strong>basketball</strong>! 🏀
 
 ## <span style="color:#ff4500;">Le basket en image</span>
 
+<div style="text-align:center;">
+  <img id="carousel-image" 
+       src="https://raw.githubusercontent.com/CalvezGabriel/test/main/0_pPqMk344oOURRBNU.jpg" 
+       alt="Basketball" 
+       style="width:400px; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.3);">
+</div>
+
 <script>
   // Tableau d'images (URLs brutes GitHub)
   const images = [
