@@ -32,29 +32,29 @@ Bienvenue sur mon site web dédié au <strong>basketball</strong>! 🏀
 
 ## <span style="color:#ff4500;">L'image du jour</span>
 
-<div style="text-align:center; margin-bottom:2em;">
-  <img id="basket-image" src="" alt="Basketball" style="width:400px; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.3);">
+<div style="text-align:center;">
+  <img id="carousel-image" 
+       src="https://raw.githubusercontent.com/tonPseudo/monSite/main/images/image1.jpg" 
+       alt="Basketball" 
+       style="width:400px; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.3);">
 </div>
 
 <script>
-  // Liste d'images de basketball
+  // Tableau d'images (URLs brutes GitHub)
   const images = [
-    "https://upload.wikimedia.org/wikipedia/commons/7/7a/Basketball.png",
-    "https://upload.wikimedia.org/wikipedia/commons/2/2a/Basketball_player.jpg",
-    "https://upload.wikimedia.org/wikipedia/commons/0/0e/NBA_logo.svg",
-    "https://upload.wikimedia.org/wikipedia/commons/1/12/Basketball_court.jpg"
+    "https://raw.githubusercontent.com/tonPseudo/monSite/main/images/image1.jpg",
+    "https://raw.githubusercontent.com/tonPseudo/monSite/main/images/image2.jpg",
+    "https://raw.githubusercontent.com/tonPseudo/monSite/main/images/image3.jpg"
   ];
 
-  // Choisir une image aléatoire
-  const randomIndex = Math.floor(Math.random() * images.length);
-  const selectedImage = images[randomIndex];
+  let currentIndex = 0; 
+  const carousel = document.getElementById("carousel-image");
 
-  // Appliquer l'image au bloc HTML
-  document.getElementById("basket-image").src = selectedImage;
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % images.length;
+    carousel.src = images[currentIndex];
+  }, 3000); // change toutes les 3 secondes
 </script>
-</p>
-
-<hr style="border-top:2px solid #004aad;">
 
 ## <span style="color:#ff4500;">💬 Me contacter</span>
 
