@@ -13,8 +13,9 @@
 ---
 
 ## Les plus belles actions NBA de la saison 2024-25 
+<div style="text-align: center;">
 <iframe width="560" height="315"
-  src="https://www.youtube.com/watch?v=j2kvgwLapKk"
+  src="https://www.youtube.com/embed/j2kvgwLapKk"
   title="YouTube video player"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
