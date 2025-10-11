@@ -1,24 +1,26 @@
-# TEST
-<!-- ======================= -->
-<!--    index.md             -->
-<!-- ======================= -->
+# BASKETBL🏀G
 
 # 🌍 Mon site minimal en Markdown
-
-Bienvenue sur mon site web !  
-Ce site est entièrement écrit en **Markdown** — un langage simple et lisible pour structurer du texte.
+Bienvenue sur mon site web dédié au basketball!  
 
 ---
 
-## 🧑‍💻 À propos
+## 🧑‍💻L'actu Internationale
 
-Je suis un développeur passionné par le web et les technologies simples.
+[Site BasketEurope :](https://www.basketeurope.com)
+[Site BeBasket :](https://www.bebasket.fr)
+[Site de la FIBA :](https://www.fiba.basketball/fr)
 
-### Ce que j’aime :
-- 💡 Créer des petits projets utiles
-- 🎨 Concevoir de jolies interfaces
-- 🚀 Partager mes connaissances
+---
 
+## Les plus belles actions NBA de la nuit du 09/10/25 
+<iframe width="560" height="315"
+  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
 ---
 
 ## 📚 Mes articles récents
