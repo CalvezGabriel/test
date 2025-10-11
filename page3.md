@@ -1,39 +1,73 @@
-## <span style="color:#00bfff;">📊 Scores NBA en direct</span>
+# Techniques et stratégies
+Les principales techniques de jeu utilisées au basket-ball ont évolué au fil du temps, en fonction des changements de règles et des apports réalisés par certains joueurs. Des basketteurs mythiques comme George Mikan, Bill Russell ou Wilt Chamberlain ont ainsi mis au point plusieurs mouvements défensifs ou offensifs réutilisés par la suite. Les joueurs des Globetrotters de Harlem revendiquent également la paternité de nombreuses variantes du dunk, du dribble et du tir. L'usage des statistiques sur le jeu s’approfondit au fil des années.
 
-<div id="live-scores" style="background-color:#333; color:white; padding:1em; border-radius:10px; max-width:700px; margin-top:1em;">
-  Chargement des scores...
-</div>
+## Le dribble
+Le dribble est le fait de faire rebondir en permanence la balle au sol avec une main. Pour avancer sur le terrain, le joueur doit impérativement dribbler sous peine d'être sanctionné par un marcher. Afin de garder un bon contrôle de balle, il est recommandé de pousser la balle au sol avec le bout des doigts plutôt qu'avec la paume, et de la faire rebondir légèrement de côté (et non devant soi). Lorsque l'on dribble à proximité d'un défenseur, il est préférable de dribbler avec la main la plus éloignée de l'adversaire afin que celui-ci soit plus loin de la balle. Ceci implique d'être aussi agile de la main gauche que de la main droite. En outre, il faut tant que possible dribbler sans regarder la balle, en utilisant la vision périphérique ou ses sensations pour savoir où elle se trouve. En évitant de regarder le ballon, le joueur peut regarder ses coéquipiers et se consacrer à la vision de jeu. De plus, il peut mieux surveiller les défenseurs et éviter les interceptions.
 
-<script>
-async function fetchLiveScores() {
-  try {
-    const response = await fetch('https://www.balldontlie.io/api/v1/games?start_date=2025-10-11&end_date=2025-10-11');
-    const data = await response.json();
-    const games = data.data;
-    if (games.length === 0) {
-      document.getElementById('live-scores').innerHTML = 'Aucun match NBA en cours aujourd\'hui.';
-      return;
-    }
-    let html = '<ul style="list-style:none; padding-left:0;">';
-    games.forEach(game => {
-      const homeTeam = game.home_team.full_name;
-      const awayTeam = game.visitor_team.full_name;
-      const homeScore = game.home_team_score;
-      const awayScore = game.visitor_team_score;
-      const status = game.status;
-      const date = new Date(game.date);
-      html += `<li style="margin-bottom:1em;">
-        <strong>${homeTeam} vs ${awayTeam}</strong><br>
-        ${date.toLocaleString('fr-FR')} - ${status}<br>
-        Score: ${homeScore} - ${awayScore}
-      </li>`;
-    });
-    html += '</ul>';
-    document.getElementById('live-scores').innerHTML = html;
-  } catch (error) {
-    document.getElementById('live-scores').innerHTML = '<p style="color:red;">Erreur de chargement des scores.</p>';
-    console.error(error);
-  }
-}
-fetchLiveScores();
-</script>
+Les bons dribbleurs font rebondir la balle le plus près possible du sol, afin de réduire la distance qu'elle parcourt depuis la main, ce qui rend les interceptions plus difficiles. Marques Haynes, leader des Globetrotters de Harlem, pouvait faire rebondir la balle au sol jusqu'à six fois par seconde. Les meilleurs joueurs dribblent également entre leurs jambes, derrière leur dos, et changent brutalement de direction tout en passant la balle dans la main opposée afin de prendre les défenseurs de vitesse. Cette technique appelée crossover est très fréquente en streetball. Certains joueurs en ont fait leur spécialité, comme Tim Hardaway, Kyrie Irving ou encore Allen Iverson, qui réalisait des cross-overs si rapides qu'ils faisaient perdre leurs appuis aux défenseurs (ankle breakers). L'euro step est un mouvement dans lequel un joueur offensif prend son dribble, fait un pas dans une direction, puis fait rapidement un autre dans une autre direction.
+
+## L'attaque
+Les stratégies offensives sont très variées et nécessitent généralement un jeu de passes ainsi qu'un déplacement des joueurs sans la balle. Les plus célèbres sont l'attaque en triangle, qui consiste à positionner les joueurs de manière à former un triangle au sein duquel les joueurs font circuler le ballon, et le run and gun, qui se base sur des contre-attaques et des tirs rapides.
+
+Chaque équipe varie ses stratégies au cours de la partie afin de surprendre les adversaires. Le meneur est généralement celui qui annonce la technique à mettre en place. Tous les postes de jeu sont généralement amenés à inscrire des paniers, même si la manière de les inscrire diffère. Les meneurs et les arrières ont tendance à marquer davantage par des tirs ou des pénétrations dans la raquette pour des double-pas, tandis que les intérieurs ont plutôt tendance à réaliser des dunks ou des bras roulés.
+
+L'équipe en attaque dispose de huit secondes pour franchir sa moitié de terrain appelée zone arrière. Elle a en tout 24 secondes pour tenter un tir. Jusqu'en 2010, l'horloge des 24 secondes était réinitialisée dès qu’un tir touchait l'anneau, ou dès qu'un joueur adverse contrôlait le ballon sur le terrain ou commettait une faute. En cas de contre ou si un tir est tenté et que la balle ne touche pas l'anneau, l’horloge continue. Depuis septembre 2010, si une équipe subit une faute en attaque alors que le temps de possession restant est inférieur à 14 secondes, l'horloge n'est réinitialisée qu'à 14 secondes.
+
+## Les tirs
+Le tir consiste à envoyer le ballon vers l'arceau dans le but d'inscrire un panier. La technique la plus utilisée est le tir en suspension (jump shot). Généralement, le joueur est placé les deux pieds face au panier, le pied droit légèrement en avant (pour un droitier). Il saisit la balle dans sa main droite et la maintient avec le bout de ses doigts, laissant un petit espace entre la balle et la paume. La main gauche, placée sur le côté gauche de la balle, sert uniquement à stabiliser le tir. Le joueur élève ensuite la balle légèrement au-dessus de sa tête, son bras formant un angle à 90 degrés. Il étend enfin le bras tout en effectuant un fouetté du poignet pour réaliser le tir. Il est recommandé de demeurer quelques instants le poignet baissé afin de suivre le mouvement de la balle (follow-through). Certains joueurs essaient de mettre de l'effet dans la balle pour absorber en partie un éventuel impact avec l'arceau. Afin de maximiser les chances de faire entrer la balle dans le panier, il est recommandé de donner au tir une trajectoire en forme d'arc : plus la balle tombe à la verticale vers l'arceau, plus elle a de chances d'y pénétrer.
+
+Si le ballon passe complètement à travers l'arceau, le panier est validé et rapporte deux points, ou trois s'il s'agit d'un tir effectué derrière la ligne des trois points. Pour que les trois points soient comptabilisés, le tireur doit prendre ses deux appuis à l'extérieur de la ligne des trois points (sans mordre sur la ligne), mais il est autorisé qu'il soit en suspension et retombe en deçà de la ligne. Le tireur peut utiliser le rebond du panneau pour marquer un panier. Si le ballon rentre dans le panier sans toucher l'arceau, on parle d'un swish. Quand le tir est très imprécis et touche uniquement le panneau, il est familièrement appelé « brique ». Si le ballon ne rentre pas dans le panier, et ne touche ni le panier ni la planche, on dit qu'il s'agit d'un air ball.
+
+Il existe également des variantes du tir en suspension. Le fadeaway consiste à tirer au panier en effectuant un saut vers l'arrière. Le tir est plus difficile à contrer mais l'attaquant doit avoir une bonne précision et effectuer le geste rapidement. Le bras roulé (hook shot), popularisé par Kareem Abdul-Jabbar, consiste à se placer de profil par rapport au panier, et réaliser un mouvement d'arc avec le bras manipulant la balle pour marquer d'une seule main. L'autre bras sert à se protéger du défenseur et éviter les contres. La technique est difficile à réaliser et est moins précise que le tir à deux mains.
+
+Le lancer franc est un tir tenté sans opposition, et accordé en réparation d'une faute. Il compte pour un point.
+
+Dans les années 2010, le panier à trois points prend une place de plus en plus importante, illustrée par les succès des Warriors de Golden State en NBA et de leur meneur Stephen Curry ainsi que des Rockets de Houston. En effet, la réussite à trois points est relativement proche de celle d'un tir à mi-distance tout en rapportant un point de plus. Des statistiques avancées évaluent précisément les zones de tirs des joueurs de façon à augmenter leur efficacité alors que la stratégie des équipes consiste à limiter la part des tirs à mi-distance.
+
+## Le double-pas et le dunk
+Le double-pas est le fait d'inscrire un panier en pleine course, après deux pas sans dribbler. Si le joueur utilise le rebond du panneau, on parle alors de lay-up. Il est souvent considéré comme le moyen le plus simple d'inscrire un panier et fait ainsi partie des premiers enseignements aux débutants. Il est généralement effectué avec une seule main (la même que le côté du terrain par lequel le joueur arrive au panier), la main libre pouvant permettre de se protéger des éventuels contres. Toutefois, il est également possible de porter la balle à deux mains jusqu'au moment de tirer, ce qui réduit les risques d'interception par l'adversaire. Si le joueur fait rouler la balle sur le bout de ses doigts en l'amenant au panier, on parle de finger roll. Le geste aurait été inventé par Wilt Chamberlain, et fut popularisé par George Gervin dans les années 1970.
+
+Le dunk consiste à marquer un panier en projetant le ballon dans l'arceau, à une ou deux mains. Inventée par George Mikan, cette technique très spectaculaire est difficile à réaliser car elle nécessite une grande taille ou une bonne détente sèche. Elle est essentiellement réalisée lors d'une contre-attaque après une interception, car les défenseurs n'ont souvent pas le temps de revenir sur le porteur du ballon, qui a donc le champ libre pour dunker. Si l'action est réalisée en présence de défenseurs, elle présente un caractère humiliant pour l'équipe adverse. On parle de poster dunk pour désigner un dunk réalisé sur un adversaire. Lorsqu'un joueur attrape une passe en l'air puis réalise un dunk, on parle de alley-oop. Lorsqu'un joueur attrape un rebond offensif et qu'il dunke sans avoir touché le sol entre la réception de balle et le dunk, on parle alors de « claquette dunk » en français ou alors de « putback dunk » en anglais.
+
+Particulièrement apprécié du public, le dunk donne lieu à des concours où les participants rivalisent d'inventivité pour créer les techniques les plus spectaculaires. Outre Michael Jordan, resté célèbre pour ses dunks réalisés depuis la ligne des lancers francs (free throw line dunk), des joueurs en ont fait leur spécialité : Julius Erving, qui popularisa le geste, Dominique Wilkins, Nate Robinson ou encore Dwight Howard, qui réalisa un dunk vêtu d'un costume de Superman lors du Slam Dunk Contest en 2008. Moins courants dans le basket-ball féminin, des dunks ont cependant été réalisés par des joueuses américaines telles que Lisa Leslie, Candace Parker ou Brittney Griner.
+
+## La passe
+Lorsque le destinataire d'une passe marque un panier sans dribbler plus de deux fois ou garder la balle plus de quatre secondes, on parle de passe décisive (assist)[116]. Les meilleurs passeurs disposent d'une excellente vision de jeu et d'un bon maniement de balle. Les plus prolifiques sont le plus souvent des meneurs : John Stockton, Jason Kidd, Steve Nash, Chris Paul, Oscar Robertson ou Magic Johnson en NBA, et Pablo Prigioni, Dimítris Diamantídis, Theódoros Papaloukás ou Laurent Sciarra en Europe.
+
+## Les écrans et le pick and roll
+Articles détaillés : Écran (sport) et Pick and roll.
+Une technique courante, nommée écran, consiste à venir se placer devant le joueur défendant sur le porteur de balle (« faire écran ») pour laisser le champ libre à son coéquipier. Celui-ci peut alors tirer, courir vers le panier ou passer la balle au joueur ayant placé l'écran. Cette dernière technique est nommée pick and roll : un joueur pose un écran sur un défenseur, puis passe derrière lui pour courir vers le panier et obtenir une passe d'un de ses coéquipiers. Il en existe plusieurs variantes : le pick and pop, où le joueur qui place l'écran se place dans une zone libre de marquage pour tenter un tir à mi-distance ; ou encore le give and go, où un joueur fait la passe à l'autre puis lui la redonne instantanément (à la manière d'un « une-deux » au football).
+
+Ces combinaisons sont fréquemment à la base de nombreux systèmes d'attaque et constituent un aspect important du basketball moderne. De nombreux duos de joueurs se sont illustrés dans l'usage du pick and roll : Oscar Robertson et Jerry West dans les années 1960, puis Kobe Bryant et Pau Gasol, ou encore Kevin Garnett et Paul Pierce.
+
+## La défense
+La défense a longtemps été la phase passive du basket-ball : les défenseurs attendaient l'échec des attaquants. À partir des années 1960 et l'introduction de la règle du marcher, les défenseurs deviennent plus agressifs et tentent de reconquérir la balle (turnover). Bill Russell, pivot des Celtics de Boston, a donné ses lettres de noblesse à la défense et a développé de nombreuses techniques.
+
+Tout comme en attaque, il existe plusieurs systèmes de base :
+
+La défense spontanée (ou intuitive) : les joueurs courent dans tous les sens, et tentent de gêner la progression de l'adversaire ou de lui prendre le ballon. Cette défense est notamment pratiquée par les jeunes joueurs et les débutants.
+
+Un exemple de défense individuelle : le défenseur (maillot vert) bloque le passage à l'attaquant et tente de lui prendre le ballon.
+La défense individuelle (dite aussi « d'homme à homme ») est le premier type de défense organisée : chaque joueur prend en charge un adversaire et s'occupe de rester près de lui tout au long de la partie. Elle permet de mettre en difficulté une équipe de niveau comparable mais a ses limites lorsque l'attaquant est plus fort.
+La défense de zone : créée dans les années 1960, elle consiste à couvrir une zone déterminée par l'entraîneur plutôt que de marquer un joueur individuellement. Elle implique des choix tactiques car certaines zones ne seront pas couvertes par les défenseurs : elle cible un ou deux joueurs dominants mais libère de l'espace pour des tirs faciles. Jusqu'en 2001, ce type de défense était interdit en NBA.
+Ces systèmes ne sont jamais appliqués de manière stricte et il existe de nombreuses variantes mêlant ces deux tactiques défensives. La plus courante est la « zone presse », qui permet de réaliser beaucoup d'interceptions et de marquer des paniers faciles mais est exigeante physiquement.
+
+À partir de la fin des années 1990 s'est développée la technique dite du « hack-a-player », également connue sous le nom « hack-a-Shaq ». Mise au point par Don Nelson, elle consiste à commettre intentionnellement une faute sur un joueur choisi pour sa faible réussite au lancer franc, afin d'empêcher l'équipe de marquer deux, voire trois points et de pouvoir récupérer la balle au rebond après son probable échec au lancer franc. Cette stratégie est fréquemment utilisée en NBA et s'applique essentiellement à des intérieurs réputés pour leur maladresse. En février 2016, la NBA décide de l'élaboration future d'une règlementation du hack-a-player, devant l'explosion de l'utilisation de cette pratique.
+
+Comme pour l'attaque, tous les postes de jeu sont sollicités lors des phases défensives, bien que le rôle des intérieurs (ailiers et pivot) soit primordial. Le plus souvent, un joueur est chargé de marquer un joueur adverse de taille comparable. Les extérieurs sont chargés d'entraver la progression des extérieurs adverses et de les gêner lorsqu'ils tentent de tirer. Les intérieurs, quant à eux, défendent au sein de la raquette et tentent d'empêcher les adversaires d'approcher de leur panier.
+
+## L'interception
+Article détaillé : Interception (basket-ball).
+L'interception (steal) désigne le fait de prendre le ballon à l'adversaire en le lui enlevant des mains (sans commettre de faute) ou en attrapant une passe de l'équipe adverse. Cette technique demande de l'agilité et de la rapidité, ainsi que des qualités d'anticipation : par conséquent, les meilleurs intercepteurs sont généralement les plus petits joueurs (meneurs, arrières). John Stockton, Jason Kidd et Michael Jordan (NBA), ainsi que Theódoros Papaloukás et Dimítris Diamantídis (Euroligue) comptent ainsi le plus grand nombre d'interceptions en carrière.
+
+## Le contre
+Le contre (block ou familièrement cake) désigne le fait de dévier le tir d'un joueur adverse sans commettre de faute. Les défenseurs ont le droit de contrer la balle tant que celle-ci est en phase ascendante vers le panier. Un contre effectué en phase descendante (goaltending) est illicite. Si un joueur rate son contre et touche la planche avec ses mains, le panier est automatiquement accordé. Les joueurs les plus susceptibles de réaliser des contres en match sont les ailiers forts et les pivots, en raison de leur grande taille et de leur proximité du panier en situation défensive. Toutefois, un sens aigu de l'anticipation peut pallier la différence de taille.
+
+Très spectaculaire, le contre fait partie des actions les plus appréciées du public et comporte un caractère humiliant pour l'adversaire. L'un des premiers joueurs à utiliser le contre comme arme d'intimidation défensive fut Bill Russell, dans les années 1960. Shaquille O'Neal, Hakeem Olajuwon, Alonzo Mourning ou Dikembe Mutombo en ont par la suite fait leur spécialité. Ce dernier est resté célèbre pour sa phrase prononcée à l'encontre de chaque joueur contré : « No, no, no! Not in my house! » (« Non, non, non ! Pas chez moi ! »).
+
+## Le rebond
+Le rebond désigne le fait de prendre la balle après un tir manqué, et ce avant qu'elle ne touche le sol. Il existe deux catégories de rebonds, en fonction du joueur qui parvient à le capter :
+le rebond défensif, lorsque l'attaquant manque son tir et qu'un défenseur récupère la balle. Celui-ci peut ainsi la passer à des coéquipiers pour aller tenter de marquer dans le panier opposé.
+le rebond offensif, lorsqu'un attaquant récupère la balle à la suite d'un tir manqué d'un partenaire ou de lui-même. Si le joueur capte un rebond offensif en suspension et tente directement de marquer, on parle familièrement de « claquette ». Il est possible de prendre son propre rebond, sauf si l'on effectue un air ball, auquel cas la balle est rendue à l'adversaire.
+Comme pour le contre, les meilleurs rebondeurs sont généralement les intérieurs, plus grands et plus proches du panier. Wilt Chamberlain, Bill Russell et Moses Malone en ont réalisé plusieurs milliers au cours de leur carrière. Dennis Rodman décida même de se concentrer sur le rebond et en fit sa spécialité quasi-exclusive.
+
