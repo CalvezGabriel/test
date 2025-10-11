@@ -1,4 +1,4 @@
-<h1>Le Basketball ?</h1>
+<h1> Le Basketball ? </h1>
 
 Le basket-ball ou basketball, fréquemment désigné par son abréviation basket, est un sport collectif de balle opposant deux équipes de cinq joueurs sur un terrain de forme rectangulaire. L'objectif de chaque équipe est de faire passer un ballon au sein d'un arceau de 45 cm de diamètre, fixé à un panneau et placé à 3,05 m du sol : le panier. Chaque panier inscrit rapporte deux points à son équipe, à l'exception des tirs effectués au-delà de la ligne des trois points (qui rapportent trois points) et des lancers francs accordés à la suite d'une faute (qui rapportent un point). L'équipe avec le nombre de points le plus important remporte la partie.
 
