@@ -34,7 +34,7 @@ Bienvenue sur mon site web dédié au <strong>basketball</strong>! 🏀
 
 <div style="text-align:center;">
   <img id="carousel-image" 
-       src="https://raw.githubusercontent.com/tonPseudo/monSite/main/images/image1.jpg" 
+       src="https://raw.githubusercontent.com/CalvezGabriel/test/main/0_pPqMk344oOURRBNU.jpg."
        alt="Basketball" 
        style="width:400px; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.3);">
 </div>
